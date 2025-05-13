@@ -4,3 +4,14 @@
 @theme {
     --font-inter: "Inter", system-ui;
 }
+
+
+@layer {
+    body {
+        @apply bg-center bg-cover bg-no-repeat overflow-x-hidden;
+    }
+
+    .menuMobile {
+        @apply z-[2] translate-x-full;
+    }
+}
