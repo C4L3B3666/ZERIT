@@ -10,11 +10,11 @@
     <main class="flex justify-center">
 
         <div class="flex justify-center p-7 bg-[#212121] border-2 border-[#ececec1a] w-[70%] my-4">
-            <nav class="hidden">
+            <nav class="hidden md:block">
                 <img src="../assets/img/img.png" alt="" srcset="">
             </nav>
             <nav>
-                <form action="#" class="flex flex-col p-3 md:p-7 md:h-[100%] h-max justify-center">
+                <form action="#" class="flex flex-col p-3">
                     <nav>
                         <img src="../assets/img/logo.png" alt="" class="w-10 md:w-[9%]">
                         <h2 class="font-inter font-bold md:text-[20pt] text-white"><span class="text-[#41A0D6] text-shadow-blue-700">ZERIT</span> <br>CONTAS ORGANIZADAS <button class="animate-bounce"><span class="text-[#41A0D6] text-5xlxl">.</span></button></h2>
@@ -28,9 +28,15 @@
                         <label for="senha">Senha</label>
                         <input type="text" name="Senha" id="senha">
                     </nav>
-                    <nav class="relative flex items-center justify-center top-6">
-                        <a href="../index.html" class="btn btn0 mx-1.5"><button>Voltar</button></a>
-                        <button class="btn">Entrar</button>
+                    <nav class="flex items-center justify-center top-6">
+                        <a href="../index.html" class="btn btn0 mx-1.5"><button type="button">Voltar</button></a>
+                        <button class="btn" type="submit">Entrar</button>
+                    </nav>
+                    <nav class="mt-8 font-extralight font-inter">
+                        <p class="text-white">
+                            Este aplicação está protegida com chaves criptografada o uso dela requer a compra de uma licença. Uso deste sistema sem a licença apropriada está sujeita a processo de acoordo com as leis vigente no Pais
+                        </p>
+                        <p class="pt-5 text-white">Software Desenvolvido pela: <span class="font-bold">ZE<span class="text-red-600">I</span>NER Inc.</span></p>
                     </nav>
                 </form>
             </nav>
