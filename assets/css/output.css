@@ -800,6 +800,9 @@
     @media (width >= 48rem) {
       text-transform: uppercase;
     }
+    @media (width >= 48rem) {
+      opacity: 100%;
+    }
   }
   .menuMobile.active {
     --tw-translate-y: calc(var(--spacing) * 0);
