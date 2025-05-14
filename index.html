@@ -9,22 +9,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body style="background-image: url('assets/img/bg.jpg'); overflow-x: hidden;">
-    <header class="bg-[#151515] flex px-7 items-center justify-between h-16">
+    <header class="bg-[#151515] flex px-7 items-center justify-between h-16 md:fixed md:bg-transparent md:w-full md:px-10">
         <nav class="z-10">
             <a href="#"><img src="assets/img/logo.png" alt="" srcset="" class="w-11"></a>
         </nav>
         <nav class="menuMobile">
             <a href="#">O que é a ZERIT?</a>
             <a href="#">Saber Mais</a>
-            <a href="#"><button>Obter Agora</button></a>
+            <a href="#">Licença</a>
+            <a href="views/organizacaoConta.html">Tela 1</a>
+            <a href="views/totalCliente.html">Tela 2</a>
+            <a href="views/users.html">Tela 3</a>
         </nav>
-        <nav class="z-10 p-3 cursor-pointer barMenu">
+        <nav class="z-10 p-3 cursor-pointer barMenu md:hidden">
             <i class="fa-solid fa-bars text-[25px] text-[#41A0D6]"></i>
         </nav>
     </header>
     <main class="bg-[#151515cc] backdrop-blur-[1px]">
         <div class="flex flex-col h-screen justify-center items-center px-7">
-            <nav class="text-center">
+            <nav class="text-center md:w-1/2">
                 <h1 class="font-bold text-3xl font-inter text-[#41A0D6]">Contas e Gestão Organizada.</h1>
                 <p class="font-extralight text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum alias, aliquid vero ad hic possimus placeat corporis harum quidem, facilis recusandae dolore tempora et tenetur asperiores in, id consectetur voluptatem.</p>
             </nav>
