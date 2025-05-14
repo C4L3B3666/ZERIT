@@ -29,11 +29,11 @@
     }
 
     .navFormLabel input {
-        @apply outline-0 px-2 border-0 border-b-2 border-b-[#41A0D6] bg-transparent font-inter text-white
+        @apply outline-0 pr-2 border-0 border-b-2 border-b-[#41A0D6] bg-transparent font-inter text-white
     }
 
     .navFormLabel label {
-        @apply font-medium text-[#41A0D6]
+        @apply font-medium text-[#41A0D6] text-[11pt]
     }
 
     .btn {
