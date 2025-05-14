@@ -7,6 +7,11 @@
 
 
 @layer {
+
+    html {
+        @apply overflow-x-hidden;
+    }
+
     body {
         @apply bg-center bg-cover bg-no-repeat overflow-x-hidden;
     }
@@ -17,5 +22,25 @@
 
     .menuMobile.active {
         @apply translate-x-[10%]
+    }
+
+    .navFormLabel {
+        @apply flex flex-col font-inter
+    }
+
+    .navFormLabel input {
+        @apply outline-0 px-2 border-0 border-b-2 border-b-[#41A0D6] bg-transparent font-inter text-white
+    }
+
+    .navFormLabel label {
+        @apply font-medium text-[#41A0D6]
+    }
+
+    .btn {
+        @apply bg-[#41A0D6] relative top-2 p-1.5 font-inter font-medium text-white hover:top-0.5 hover:shadow-2xl hover:shadow-[#41A0D6] duration-150 ease-in cursor-pointer
+    }
+
+    .btn0 {
+        @apply bg-transparent hover:text-[#41A0D6] static mt-4;
     }
 }
