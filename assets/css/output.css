@@ -166,36 +166,20 @@
   }
 }
 @layer utilities {
-  .absolute {
-    position: absolute;
-  }
-  .top-0 {
-    top: calc(var(--spacing) * 0);
-  }
-  .right-0 {
-    right: calc(var(--spacing) * 0);
-  }
   .z-10 {
     z-index: 10;
   }
   .flex {
     display: flex;
   }
-  .h-full {
-    height: 100%;
+  .h-16 {
+    height: calc(var(--spacing) * 16);
   }
   .h-screen {
     height: 100vh;
   }
   .w-11 {
     width: calc(var(--spacing) * 11);
-  }
-  .w-\[50vh\] {
-    width: 50vh;
-  }
-  .translate-x-0 {
-    --tw-translate-x: calc(var(--spacing) * 0);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -205,9 +189,6 @@
   }
   .items-center {
     align-items: center;
-  }
-  .justify-around {
-    justify-content: space-around;
   }
   .justify-between {
     justify-content: space-between;
@@ -220,9 +201,6 @@
   }
   .bg-\[\#151515cc\] {
     background-color: #151515cc;
-  }
-  .bg-\[\#212121\] {
-    background-color: #212121;
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -277,25 +255,31 @@
     background-repeat: no-repeat;
   }
   .menuMobile {
+    position: absolute;
+    top: calc(var(--spacing) * 16);
+    right: calc(var(--spacing) * 0);
     z-index: 2;
+    display: flex;
+    height: 100%;
+    width: 50vh;
     --tw-translate-x: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #151515;
+    --tw-font-weight: var(--font-weight-extralight);
+    font-weight: var(--font-weight-extralight);
+    color: var(--color-white);
+    --tw-duration: 150ms;
+    transition-duration: 150ms;
+    --tw-ease: linear;
+    transition-timing-function: linear;
   }
-}
-@property --tw-translate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
+  .menuMobile.active {
+    --tw-translate-x: 10%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -337,12 +321,32 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-translate-z: 0;
       --tw-font-weight: initial;
       --tw-backdrop-blur: initial;
       --tw-backdrop-brightness: initial;
@@ -353,6 +357,11 @@
       --tw-backdrop-opacity: initial;
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-duration: initial;
+      --tw-ease: initial;
     }
   }
 }

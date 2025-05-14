@@ -12,6 +12,10 @@
     }
 
     .menuMobile {
-        @apply z-[2] translate-x-full;
+        @apply z-[2] translate-x-[100%] absolute bg-[#151515] flex flex-col h-full right-0 justify-around w-[50vh] items-center text-white font-extralight top-16 duration-150 ease-linear;
+    }
+
+    .menuMobile.active {
+        @apply translate-x-[10%]
     }
 }
