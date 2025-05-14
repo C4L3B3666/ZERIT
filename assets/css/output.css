@@ -221,6 +221,9 @@
   .w-\[70\%\] {
     width: 70%;
   }
+  .w-screen {
+    width: 100vw;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
