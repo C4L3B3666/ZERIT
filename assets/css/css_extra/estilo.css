@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .campoInput {
+        @apply mt-2 p-2 bg-transparent border-2 border-cor1 rounded-md font-f1 focus:outline-none text-white
+    }
+    .botao {
+        @apply mx-5 mt-4 px-6 py-2 font-f1 font-bold rounded-full bg-cor1 border-2 border-cor1 text-white duration-500 ease-out active:bg-cor1 active:text-white hover:bg-cor1 hover:text-white
+    }
+
+    .btnLateral {
+        @apply p-2 m-1 font-f1 rounded-md font-light bg-cor1 text-white w-max md:bg-sky-600 md:w-full md:flex md:items-center
+    }
+
+    .btnLateral i {
+        @apply md:text-3xl md:pr-20
+    }
+
+    .navlinksTopo2 button {
+        @apply bg-sky-800 m-1 h-16 px-0.5 rounded-md
+    }
+    .navlinksTopo2 button h5 {
+        @apply font-f1 font-bold
+    }
+    .navlinksTopo2 button p, small {
+        @apply font-extralight
+    }
+
+    table {
+        @apply text-center border-2 border-cor1 w-max
+    }
+
+    table thead th {
+        @apply font-f1 font-semibold border-2 border-cor1 px-2 text-cor1
+    }
+
+    table tbody td {
+        @apply border-2 border-cor1 font-f1 font-extralight
+    }
+
+    .navFooterIcones i {
+        @apply mx-4 text-2xl my-4 text-cor1
+    }
+
+    .select {
+        @apply bg-slate-50 rounded-lg
+    }
+
+    .select,.input3 {
+        @apply w-2/3 m-2 py-2 px-3 text-center focus:outline-none font-f1 font-semibold md:w-1/5
+    }
+
+    .input3 {
+        @apply bg-transparent border-b-2 border-cor1 border-solid font-light text-white
+    }
+
+    .btnLateral {
+        @apply bg-sky-500 md:h-28 w-60
+    }
+
+    .Tela4Nav2 a {
+        @apply text-white m-2 font-f1 font-light
+    }
+    
+    .Tela4Nav2 button {
+        @apply bg-sky-800 text-white m-2 w-11/12 h-32 rounded-lg md:w-40 md:m-0 hover:scale-110 hover:bg-sky-900 active:scale-110 active:bg-sky-900
+    }
+
+    .Tela4Nav2 button i {
+        @apply text-5xl
+    }
+    
+    .pagesEqual a button {
+        @apply md:flex md:flex-col md:text-center md:justify-center md:items-start md:w-40
+    }
+
+    .pagesEqual {
+        @apply ease-in duration-500 delay-100
+    }
+
+    .navMoney {
+        @apply flex items-center justify-between px-4 my-1
+    }
+
+    .navMoney img {
+        @apply w-14 rounded-xl
+    }
+    .navMoney i {
+        @apply text-4xl
+    }
+    
+    .navDadosBank {
+        @apply flex justify-between items-center px-4 font-f1
+    }
+
+    .navMoney h6 {
+        @apply text-cor2 font-bold
+    }
+
+    .textDadosBank1 {
+        @apply font-light 
+    }
+    .textDadosBank2 {
+        @apply font-extrabold
+    }
+    .btnPagamento {
+        @apply bg-transparent border-2 border-cor2 px-3 py-2 my-3 rounded-md
+    }
+}

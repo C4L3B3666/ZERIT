@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>ZERIT | Utilizadores</title>
+    <script src="../assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/css_extra/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black">
+    <div class="bg-cor1 text-white">
+        <h1 class="text-center font-f1 font-extrabold text-base">Pesquisa e Selecção</h1>
+    </div>
+
+    <div class="flex flex-col items-center justify-center md:items-start md:justify-normal">
+        <h3 class="text-white font-f1 text-xl font-medium md:pl-4">Utilizadores</h3>
+        <nav class="flex flex-col w-full justify-center items-center md:items-start md:pl-4">
+            <select name="#" id="#" class="select">
+                <option value="#">Opção 1</option>
+                <option value="#" selected>[Todas]</option>
+            </select>
+
+            <input type="search" name="#" id="#" placeholder="Pesquisar" class="input3">
+
+            <select name="#" id="#" class="select">
+                <option value="#">Opção 1</option>
+                <option value="#" selected>OU</option>
+            </select>
+            
+            <select class="select">
+                <option value="#">Opção 1</option>
+                <option value="#" selected>Contém</option>
+            </select>
+        </nav>
+    </div>
+
+    <div class="px-4 flex items-center justify-center md:py-14">
+        <table class="md:w-full">
+            <thead>
+                <th>Cód. Utilizador</th>
+                <th>Nome</th>
+                <th>Morada</th>
+                <th>Código Postal</th>
+                <th>Cidade</th>
+            </thead>
+            <tbody class="text-white">
+                <tr>
+                    <td>1</td>
+                    <td>Flávio Ganga</td>
+                    <td>Luanda</td>
+                    <td>ANGO2</td>
+                    <td>Luanda</td>
+                <tr>
+                    <td>2</td>
+                    <td>Kangamba</td>
+                    <td>Moxico</td>
+                    <td>Rua BX</td>
+                    <td>Desconhecida</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="flex flex-col items-center justify-center md:flex-col md:flex">
+        <nav class="text-cor1">
+            <i class="fa-regular fa-filter"></i>
+        </nav>
+        <nav>
+            <a href="#"><button class="botao bg-green-500 border-green-300 hover:bg-green-500">Confirmar</button></a>
+            <a href="#"><button class="botao bg-red-500 border-red-300 hover:none hover:bg-red-500">Cancelar</button></a>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>ZERIT | Tela 5</title>
+    <script src="../assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/css_extra/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black overflow-x-hidden">
+    <header class="flex justify-center md:justify-between px-4">
+        <nav class="cursor-pointer hidden md:block">
+            <i class="fa-solid fa-list text-white mostrarListaLateral"></i>
+        </nav>
+        <nav class="cursor-pointer">
+            <a href="/"><h1><img src="../assets/img/logotxt.png" alt="" srcset="" class="w-14"></h1></a>
+        </nav>
+        <nav class="cursor-pointer md:z-20 hidden md:block">
+            <i class="fa-solid fa-x text-red-500 fecharListaLateral"></i>
+        </nav>
+    </header>
+
+    <div class="flex items-center justify-between px-4">
+        <nav>
+            <img src="../assets/img/logo.png" alt="" srcset="" class="w-28">
+        </nav>
+        <nav class="text-white font-bold">
+            <p class="uppercase">total</p>
+            <h2 class="text-3xl"><strong>0,00 Kzs</strong></h2>
+        </nav>
+    </div>
+
+    <div class="flex w-screen overflow-x-scroll md:flex-row md:flex-wrap md:absolute md:top-0 md:-right-full md:h-full md:bg-sky-800 md:w-1/4 md:z-10 md:justify-center inicioPagina5 pagesEqual listaLateral">
+        <a href="#" class="linkPagamento"><button class="btnLateral"> <i class="fa-regular fa-file"></i> Novo Documento</button></a>
+        <a href="#"><button class="btnLateral"> <i class="fa-solid fa-pen-to-square"></i> Fechar Conta</button></a>
+        <a href="#"><button class="btnLateral"> <i class="fa-solid fa-trash-can"></i> Fechar a Crédito</button></a>
+        <a href="#"><button class="btnLateral"> <i class="fa-solid fa-retweet"></i> Fechar com Desconto</button></a>
+        <a href="#"><button class="btnLateral"> <i class="fa-solid fa-arrow-right-arrow-left"></i> Imprimir </button></a>
+        <a href="#"><button class="btnLateral"> <i class="fa-solid fa-magnifying-glass"></i> Imprimir com Talão Oferta</button></a>
+        <a href="#"><button class="btnLateral"> <i class="fa-regular fa-keyboard"></i> Quantidade</button></a>
+        
+        <a href="#">
+            <button class="btnLateral"> 
+                <i class="fa-solid fa-lock"></i> Preço
+            </button>
+        </a>
+
+        <a href="#"><button class="btnLateral"> <i class="fa-thin fa-folder-gear"></i> Apagar linha</button></a>
+
+        <a href="#"><button class="btnLateral"> <i class="fa-solid fa-plus"></i> Informação do documento</button></a>
+        <a href="#"><button class="btnLateral"> <i class="fa-solid fa-plus"></i> Gravar temporário</button></a>
+        <a href="#"><button class="btnLateral"> <i class="fa-sharp fa-solid fa-arrow-left"></i> Voltar ao Menu Principal</button></a>
+    </div>
+
+    <div>
+        <nav class="text-white flex navlinksTopo2 flex-wrap justify-center">
+            <a href="#">
+                <button>
+                    <h5>Documento</h5>
+                    <p>FD 1/1</p>
+                </button>
+            </a>
+            <a href="#">
+                <button>
+                    <h5>Vendedor</h5>
+                    <p>icone</p>
+                </button>
+            </a>
+            <a href="#">
+                <button>
+                    <h5>Cliente</h5>
+                    <nav>
+                        <p class="hidden">Ícone</p>
+                        <small>999111000</small>
+                        <small>Consumidor Final</small>
+                    </nav>
+                </button>
+            </a>
+            <a href="#">
+                <button>
+                    <h5>Saldo Atual</h5>
+                    <p>0,00 Kzs</p>
+                </button>
+            </a>
+            <a href="#">
+                <button>
+                    <h5>Pontos Disponíveis</h5>
+                    <p>2</p>
+                </button>
+            </a>
+        </nav>
+        <nav></nav>
+    </div>
+
+    <div class="overflow-x-scroll px-4">
+        <table class="text-white md:w-full">
+            <thead>
+                <th>#</th>
+                <th>Referência</th>
+                <th>Descrição</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Desconto</th>
+                <th>Imposto</th>
+                <th>Total</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Referência1</td>
+                    <td>Descr.</td>
+                    <td>100</td>
+                    <td>155Kzs</td>
+                    <td>20%</td>
+                    <td>25Kzs</td>
+                    <td>243Kzs</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="area text-white h-52 bg-white text-center mt-1 md:h-96">
+            <p class="text-black">Área de Visualização das operações</p>
+        </div>
+    </div>
+
+    <footer class="text-white flex top-0 items-center flex-col justify-between px-4 md:flex-row md:items-center pt-10">
+        <nav>
+            <p class="font-light">
+               <script>
+                    const data = new Date();
+                    let diaSemana = data.getDay();
+                    let dia = data.getDate()
+                    let mes = data.getMonth()
+                    let ano = data.getFullYear()
+                    let hora = data.getHours()
+                    let minuto = data.getMinutes()
+                    switch (diaSemana) {
+                        case 0:
+                            diaSemana = "Domingo";
+                            break;
+                        case 1:
+                            diaSemana = "Segunda-feira";
+                            break;
+                        case 2: 
+                            diaSemana = "Terça-feira";
+                            break;
+                        case 3: 
+                            diaSemana = "Quarta-feira";
+                            break;
+                        case 4: 
+                            diaSemana = "Quinta-feira";
+                            break;
+                        case 5: 
+                            diaSemana = "Sexta-feira";
+                            break;
+                        case 6: 
+                            diaSemana = "Sábado";
+                            break;
+                    }
+                    switch (mes) {
+                        case 0:
+                            mes = "Janeiro";
+                            break;
+                        case 1:
+                            mes = "Fevereiro";
+                            break;
+                        case 2: 
+                            mes = "Março";
+                            break;
+                        case 3: 
+                            mes = "Abril";
+                            break;
+                        case 4: 
+                            mes = "Maio";
+                            break;
+                        case 5: 
+                            mes = "Junho";
+                            break;
+                        case 6: 
+                            mes = "Julho";
+                            break;
+                        case 7: 
+                            mes = "Agosto";
+                            break;
+                        case 8: 
+                            mes = "Setembro";
+                            break;
+                        case 9: 
+                            mes = "Outubro";
+                            break;
+                        case 10: 
+                            mes = "Novembro";
+                            break;
+                        case 11: 
+                            mes = "Dezembro";
+                            break;
+                    }
+                    document.write(diaSemana + ", " + dia + " de " + mes + " de " + ano + ", " + hora + ":" + minuto);
+               </script>
+            </p>
+        </nav>
+        <nav class="flex flex-col">
+            <p class="font-f1 font-semibold">Total de Itens:</p>
+            <div class="flex items-center justify-between">
+                <i class="fa-solid fa-user text-3xl"></i>
+                <nav >
+                    <p class="font-f1 ml-3">
+                        <p>Usuário</p>
+                        <p class="text-cor1 font-semibold">Flávio Ganga</p>
+                    </p>
+                </nav>
+            </div>
+        </nav>
+        <hr class="border-1 border-white w-full my-3 md:hidden">
+        <nav class="flex flex-col items-center justify-center">
+            <p class="font-f1 font-semibold">Posto 1:</p>
+            <nav class="flex justify-around navFooterIcones">
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-solid fa-folder-open"></i>
+                <i class="fa-solid fa-comments"></i>
+                <i class="fa-solid fa-layer-group"></i>
+            </nav>
+        </nav>
+    </footer>
+
+    <div class="w-screen h-screen flex items-center justify-center -top-full absolute popOut ease-linear duration-200 bg-cor3 z-40" style="backdrop-filter: blur(2px);">
+
+        <div class="font-f1 m-2 rounded-sm shadow-lg shadow-slate-700 border border-solid border-cor2 absolute w-11/12 bg-black md:w-1/2">
+            <div class="flex items-center justify-between px-4">
+                <nav>
+                    <img src="../assets/img/logotxt.png" alt="" srcset="" class="w-16">
+                </nav>
+                <nav>
+                    <i class="fa-solid fa-x closePop hover:scale-110 text-red-500"></i>
+                </nav>
+            </div>
+            <h5 class="text-white text-center font-extrabold text-lg">Selecione o Modelo de Pagamento</h5>
+            <div class="text-white">
+
+                <div>
+                    <nav class="navMoney">
+                        <i class="fa-solid fa-money-bill-1-wave"></i>
+                        <h6>Numérario (Cash)</h6>
+                    </nav>
+                    <nav class="navMoney">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <h6>Transferência Bancária</h6>
+                    </nav>
+                    <nav class="navMoney">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <h6>Cartão (TPA)</h6>
+                    </nav>
+                </div>
+
+                <small class="pl-4">Você também pode usar pagar através do...</small>
+                <div>
+                    <nav class="navMoney">
+                        <img src="https://pbs.twimg.com/profile_images/1747272450357018625/Ou7e09r1_400x400.jpg" alt="" srcset="">
+                        <h6>PayPal</h6>
+                    </nav>
+                    <nav class="navMoney">
+                        <img src="https://rna.ao/rna.ao/wp-content/uploads/2022/04/32F6F3FA-4E3F-45B6-BA5A-54025F011B11-770x512.jpeg" alt="" srcset="">
+                        <h6>Multicaixa Express</h6>
+                    </nav>
+                    <nav class="navMoney">
+                        <img src="https://www.aicep.com/wp-content/uploads/2021/09/unitel-mobile-money-1.png" alt="" srcset="">
+                        <h6>Unitel Money</h6>
+                    </nav>
+                </div>
+            </div>
+
+        <div class="text-white">
+            <nav class="navDadosBank">
+                <p class="textDadosBank1">Saldo Atual:</p>
+                <p class="textDadosBank2">55,5 Kzs</p>
+            </nav>
+            <nav class="navDadosBank">
+                <p class="textDadosBank1">Saldo Autorizado:</p>
+                <p class="textDadosBank2">55,5 Kzs</p>
+            </nav>
+            <div class="md:flex">
+                <nav class="navDadosBank justify-center">
+                    <input type="text" name="" id="" placeholder="Insira o valor" maxlength="8" class="bg-transparent font-f1 border-2 border-cor2 rounded-lg px-3 py-2 focus:outline-none">
+                </nav>
+                <nav class="flex items-center justify-around">
+                    <button class="btnPagamento hover:bg-cor1 active:bg-cor1 ease-in-out duration-300 md:mr-3">Pagar</button>
+                    <button class="btnPagamento bg-red-600 border-red-400">Cancelar</button>
+                </nav>
+            </div>
+
+        </div>
+        </div>
+    
+    </div>        
+</body>
+</html>
