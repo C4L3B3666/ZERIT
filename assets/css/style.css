@@ -21,7 +21,7 @@
     }
 
     .menuMobile.active {
-        @apply translate-y-0 opacity-100 
+        @apply translate-y-0 opacity-100 pointer-events-auto
     }
 
     .navFormLabel {
